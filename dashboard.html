@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ac33afc2ad.js" crossorigin="anonymous"></script>    
+
+    <title>Dashboard</title>
+</head>
+<body style="background-color: #f3f2ef;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container container-fluid">
+          <a class="navbar-brand text-primary" href="#"><h2> Crafter Technologies <small class="text-black-50" >Dashboard</small></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-bell fa-lg"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                  <li><a class="dropdown-item" href="#">Notification 2</a></li>                 
+                  <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Change Password</a></li>                 
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+  </nav>
+
+  <button class="btn " id="btn-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+    
+    <h6 class="ac90 text-black-50"><strong>MENU</strong></h6>
+  </button>
+
+      <!-- Main panel Starts-->
+  <div class="container mt-3 py-4 px-4" id="main-panel">
+     
+    <!-- Dashboard Banner -->
+    <div class="container-fluid text-white p-4 px-4 align-items-end" id="dash-banner" >
+          
+      <h1 class="display-3 "><small class="">Greetings!</small> <strong>Admin</strong></h1>
+
+      <div class="row row-cols-6 gap-3">
+        <h4><em>Quick Actions : </em> </h4> 
+        <button type="button" class="btn btn-outline-light">Schedule Meeting</button>
+        <button type="button" class="btn btn-outline-light">Take Half Day</button>
+        <button type="button" class="btn btn-outline-light">Apply for Leave</button>
+      </div>
+    </div>
+      <br>
+
+        <!-- CARDS ROW-->        
+    <div class="row row-cols-4 px-4 gap-4 ps-5">
+            <div class="card g-4 p-0 col-sm-3 border-primary">
+              <div class="card-header bg-primary text-white">
+                Total Applicants
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">142</h1>                
+                <p class="text-muted"> Last visited : 2 days ago</p>
+              </div>
+              <div class="card-footer btn">
+                
+                <a href="www.google.co.in" class="float-end text-decoration-none" >View </a>
+              </div>
+            </div>
+            <div class="card g-4 p-0 col-sm-3 border-warning">
+              <div class="card-header bg-warning text-white">
+                Awaiting Approvals
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">33</h1>                
+                <p class="text-muted"> Last visited : 2 days ago</p>
+              </div>
+              <div class="card-footer btn">
+                
+                <a href="www.google.co.in" class="float-end text-decoration-none" >View </a>
+              </div>
+            </div>
+            <div class="card g-4 p-0 col-sm-3 border-success">
+              <div class="card-header bg-success text-white">
+                Attendance Percentage
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">87%</h1>                
+                <p class="text-muted"> Last visited : Recently</p>
+              </div>
+              <div class="card-footer btn">
+                
+                <a href="www.google.co.in" class="float-end text-decoration-none" >View </a>
+              </div>
+            </div>
+            <div class="card g-4 p-0 col-sm-2 border-danger ">
+              <div class="card-header bg-danger text-white">
+                Pending Tasks
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">17</h1>                
+                <p class="text-muted"> Last visited : Yesterday</p>
+              </div>
+              <div class="card-footer btn">
+                
+                <a href="www.google.co.in" class="float-end text-decoration-none" >View </a>
+              </div>
+            </div>
+    </div>
+        <!-- CARDS END -->
+
+        <!-- TAB Content -->
+    <section class="container px-4 mt-5">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Revenue</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Department</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Salary</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          </div>
+    </section>
+      <!-- TABS END -->
+         
+  </div>  <!--Main Panel ENDS-->
+
+<!-- sidebar -->
+<div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">MENU</h6>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+ 
+    <div class="container">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    </div>
+
+    <div class="offcanvas-body px-0">        
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+            
+            <li>
+                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                    <i class="fa fa-gauge fa-lg"></i><span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+            </li>
+            <!-- <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Orders</span></a>
+            </li> -->
+            <li class="dropdown ">
+                <a href="#" class="nav-link dropdown-toggle  text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-person fa-lg"></i><span class="ms-1 d-none d-sm-inline">Employees</span>
+                </a>
+                <ul class=" dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                    <li><a class="dropdown-item" href="#">Statistics</a></li>
+                    <li><a class="dropdown-item" href="#">Directory</a></li>
+                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                    <li><a class="dropdown-item" href="#">Terminations</a></li>
+                    <li><a class="dropdown-item" href="#">Assign Task</a></li>
+                    <li><a class="dropdown-item" href="#">Onboarding / Offboarding</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>                   
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fa fa-box fa-lg"></i><span class="ms-1 d-none d-sm-inline">Products</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-truncate">
+                  <i class="fa fa-list-check fa-lg"></i><span class="ms-1 d-none d-sm-inline">Tasks Pending</span></a>
+          </li>
+            <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fa fa-hand-holding-dollar fa-lg"></i><span class="ms-1 d-none d-sm-inline">Vendors</span> </a>
+            </li>
+           
+            
+        </ul>
+    </div>
+</div>
+<!-- End Sidebar -->
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+<footer class="footer text-center py-3">
+  <p>  Crafter Technologies <i class="fa fa-copyright"></i> Copyright 2022 </p>
+  </footer>
+</html>
